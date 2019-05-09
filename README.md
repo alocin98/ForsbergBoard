@@ -1,4 +1,4 @@
 # ForsbergBoard
 
 ## Info
-www.jugendlager.remoruch.ch
+www.remoruch.ch/jugendlager/
