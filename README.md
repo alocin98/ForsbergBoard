@@ -1,8 +1,7 @@
 # ForsbergBoard
 
 ## Info
-Android-app für d Webitä:
-www.remoruch.ch/jugendlager/
+Forsberg vom Per
 
 ## Parolä ufeladä
 Um ä Forsberg-parolä ufezladä, due d Files bitte ungerem 'res/raw' ordner ufeladä:
