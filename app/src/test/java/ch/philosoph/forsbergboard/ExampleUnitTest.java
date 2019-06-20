@@ -1,4 +1,4 @@
-package com.example.forsbergboard;
+package ch.philosoph.forsbergboard;
 
 import org.junit.Test;
 
