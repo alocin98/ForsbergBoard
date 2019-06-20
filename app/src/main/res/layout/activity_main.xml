@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context="ch.philosoph.forsbergboard.MainActivity">
 
     <ScrollView
@@ -14,15 +15,23 @@
             android:id="@+id/linearlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:textColor="@color/grey"
+            android:layout_marginBottom="10dp"
+            android:weightSum="4.0">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40sp" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Welcome to the Forsberg app."
+                android:text="Welcome to the Forsberg app"
                 android:textSize="24sp"
+                android:textColor="@color/grey"
                 app:fontFamily="sans-serif-medium" />
 
             <TextView
@@ -32,6 +41,16 @@
                 android:gravity="center"
                 android:text="Created by philosophen inc."
                 android:textSize="18sp"
+                android:textColor="@color/grey"
+                app:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:id="@+id/twitterlink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/grey"
                 app:fontFamily="sans-serif-medium" />
 
             <Space
