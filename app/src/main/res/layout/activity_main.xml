@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/white_gray_1"
     tools:context="ch.philosoph.forsbergboard.MainActivity">
 
     <ScrollView
@@ -15,9 +15,9 @@
             android:id="@+id/linearlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:orientation="vertical"
             android:textColor="@color/grey"
-            android:layout_marginBottom="10dp"
             android:weightSum="4.0">
 
             <Space
@@ -29,9 +29,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Welcome to the Forsberg app"
-                android:textSize="24sp"
+                android:text="@string/welcome_to"
                 android:textColor="@color/grey"
+                android:textSize="24sp"
                 app:fontFamily="sans-serif-medium" />
 
             <TextView
@@ -39,9 +39,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Created by philosophen inc."
-                android:textSize="18sp"
+                android:text="@string/created_by"
                 android:textColor="@color/grey"
+                android:textSize="18sp"
                 app:fontFamily="sans-serif-medium" />
 
             <TextView
@@ -49,14 +49,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:textSize="18sp"
                 android:textColor="@color/grey"
+                android:textSize="18sp"
                 app:fontFamily="sans-serif-medium" />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="40sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/perSoundItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
         </LinearLayout>
     </ScrollView>
+
+
 
 </android.support.constraint.ConstraintLayout>
