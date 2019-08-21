@@ -3,4 +3,13 @@
     <string name="created_by">Created by philosophen inc.</string>
     <string name="welcome_to">Welcome to the Forsberg app</string>
     <string name="search">Search</string>
+    <string name="title_activity_break_for_speaker">Break For Speaker</string>
+    <string name="text_replace_per">If the speaker has a croaky voice, you can use per as a deputy.</string>
+    <string name="title_replace_per">Replace the speaker with Per</string>
+    <string name="text_random_per">As a speaker, you\'re always busy. With the Per Forsberg Board you can enjoy a little time-out. Throw the imaginary Per on and treat yourself to a short break.</string>
+    <string name="title_random_per">Play random Per sounds</string>
+    <string name="edit_text_t2s">Text to speech</string>
+    <string name="switch_t2s">Text to speech after Per</string>
+    <string name="select_per_sound">Select one Per sound:</string>
+    <string name="per_sounds">Per Sounds</string>
 </resources>

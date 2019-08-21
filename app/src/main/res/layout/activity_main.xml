@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white_gray_1"
     tools:context="ch.philosoph.forsbergboard.MainActivity">
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
         <LinearLayout
             android:id="@+id/linearlayout"
@@ -17,7 +12,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:orientation="vertical"
-            android:textColor="@color/grey"
+            android:textColor="@color/gray"
             android:weightSum="4.0">
 
             <Space
@@ -30,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/welcome_to"
-                android:textColor="@color/grey"
+                android:textColor="@color/gray"
                 android:textSize="24sp"
                 app:fontFamily="sans-serif-medium" />
 
@@ -40,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/created_by"
-                android:textColor="@color/grey"
+                android:textColor="@color/gray"
                 android:textSize="18sp"
                 app:fontFamily="sans-serif-medium" />
 
@@ -49,7 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:textColor="@color/grey"
+                android:textColor="@color/gray"
                 android:textSize="18sp"
                 app:fontFamily="sans-serif-medium" />
 
@@ -60,10 +55,7 @@
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/perSoundItem"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="fill_parent"/>
         </LinearLayout>
-    </ScrollView>
 
-
-
-</android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>
