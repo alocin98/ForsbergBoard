@@ -1,5 +1,6 @@
 package ch.philosoph.forsbergboard;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -14,7 +15,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.forsbergboard.R;
 
@@ -24,7 +24,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements MyRecyclerViewAdapter.ItemClickListener {
 
     MyRecyclerViewAdapter adapter;
-    List<PerSound> perSounds = new ArrayList<>();
+    static List<PerSound> perSounds = new ArrayList<>();
     MediaPlayer mp = new MediaPlayer();
 
 
@@ -97,5 +97,15 @@ public class MainActivity extends AppCompatActivity implements MyRecyclerViewAda
             }
         });
         return true;
+    }
+
+
+    public void openBreakForSpeaker(MenuItem item) {
+        Intent intent = new Intent(this, BreakForSpeaker.class);
+        startActivity(intent);
+    }
+
+    public static List<PerSound> getPerSounds() {
+        return perSounds;
     }
 }
